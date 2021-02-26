@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>More</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <style>
+.accordion {
+    background-color: rgba(195, 242, 228, 0.6);
+    color: #101010;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgba(175, 199, 196, 0.81);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+    </style>
+</head>
+<body>
+  <h1>KnoWLEDge UNIvers</h1>
+  <p>welcome to the world of books!</p>
+<div class="topnav">
+<a class="active" href="file:///F:/ECE_2100_Project_website/web%20project/Homepage.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Catagories
+            <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+       <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20story%20books.html" target="_blank">Story books</a>
+        <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20general%20subject.html" target="_blank">General subjects</a>
+        <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20engineering%20sub.html">Engineering Study</a>
+    </div>
+    </div>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20gallary.html" target="_blank">Gallary</a>
+  <a href="#">More</a>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/Library%20help.html" target="_blank">Help</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">submit</button>
+    </form>
+  </div>
+  </div>
+    <h2>More </h2>
+<button class="accordion">Magazines</button>
+<div class="panel">
+    <p><b><a href="more/windows%20help.html" target="_blank">Windows Help and Advice</a></b></p>
+    <p><b><a href="more/apps%20unveiled.html" target="_blank">Apps Unveiled</a></b></p>
+    <p><b><a href="more/web%20designer.html" target="_blank">Web Designer UK</a></b></p>
+    <p><b><a href="more/scientist.html" target="_blank">The Scientist</a></b></p>
+    <p><b><a href="more/sky%20nd%20telescope.html" target="_blank">SKY and TELESCOPE</a></b></p>
+</div>
+
+<button class="accordion">Journals</button>
+<div class="panel">
+    <a href="https://www.omicsonline.org/journal-pollution.php" target="_blank">Journals of Pollution</a><br>
+    <a href="https://www.journals.elsevier.com/environmental-pollution" target="_blank">Environmental Pollution</a><br>
+    <a href="https://www.omicsonline.org/computer-science-systems-biology.php" target="_blank">Journal of Computer Science and Systems Biology</a><br>
+    <a href="http://www.rroij.com/international-journal-of-innovative-research-in-computer-and-communication-engineering.php" target="_blank">International Journal of Innovative Research in Computer and Communication Engineering</a><br>
+    <a href="https://www.omicsonline.org/information-technology-software-engineering.php" target="_blank">Journal of Information Technology and Software Engineering</a><br>
+    <a href="https://www.omicsonline.org/accounting-marketing.php" target="_blank">Journal of Accounting and Marketing</a><br>
+</div>
+
+<button class="accordion">Newspapers</button>
+<div class="panel">
+    <a href="http://www.prothomalo.com/" target="_blank">Prothom Alo</a><br>
+    <a href="http://www.ittefaq.com.bd" target="_blank">Ittefaq</a><br>
+    <a href="http://www.bd-pratidin.com/" target="_blank">Bangladesh Protidin</a><br>
+    <a href="http://www.bhorerkagoj.com/" target="_blank">Bhorer Kagoj</a><br>
+    <a href="http://samakal.com/" target="_blank">Samakal</a><br>
+    <a href="http://www.kalerkantho.com/" target="_blank">Kalerkantho</a><br>
+    <a href="http://www.daily-sun.com/" target="_blank">Daily Sun</a><br>
+    <a href="https://www.dhakatribune.com/" target="_blank">Dhaka Tribune</a><br>
+    <a href="https://www.thedailystar.net/" target="_blank">The Dailystar</a><br>
+    <a href="http://thebangladeshtoday.com/" target="_blank">The Bangladesh Today</a><br>
+    <a href="http://www.theindependentbd.com/" target="_blank">The Independent</a><br>
+    <a href="http://www.newstoday.com.bd/" target="_blank">News Today</a><br>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Help</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(155, 165, 162, 0.46);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color:gainsboro;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: rgba(242, 242, 242, 0.37);
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+<body>
+  <h1>KnoWLEDge UNIvers</h1>
+  <p>welcome to the world of books!</p>
+<div class="topnav">
+<a class="active" href="file:///F:/ECE_2100_Project_website/web%20project/Homepage.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Catagories
+            <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+       <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20story%20books.html" target="_blank">Story books</a>
+        <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20general%20subject.html" target="_blank">General subjects</a>
+        <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20engineering%20sub.html">Engineering Study</a>
+    </div>
+    </div>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20gallary.html" target="_blank">Gallary</a>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20more.html" target="_blank">More</a>
+  <a href="#">Help</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">submit</button>
+    </form>
+  </div>
+</div>
+<div class="main">
+    <div class="container">
+  <div style="text-align:center">
+    <h2>Need Help?</h2>
+    <p>For any help or suggestions, leave us a message:</p>
+  </div>
+  <div class="row">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Email</label>
+        <input type="text" id="mail" name="Email" placeholder="Your email address..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Bangladesh</option>
+          <option value="canada">India</option>
+          <option value="usa">Nepal</option>
+          <option value="australia">China</option>
+          <option value="canada">Japan</option>
+          <option value="usa">Srilanka</option>
+
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

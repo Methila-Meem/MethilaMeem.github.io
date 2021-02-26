@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catagory General Subjects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <style>
+.accordion {
+    background-color: rgba(195, 242, 228, 0.6);
+    color: #101010;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgba(175, 199, 196, 0.81);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+    </style>
+</head>
+<body>
+  <h1>KnoWLEDge UNIvers</h1>
+  <p>welcome to the world of books!</p>
+<div class="topnav">
+<a class="active" href="file:///F:/ECE_2100_Project_website/web%20project/Homepage.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Catagories
+            <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+       <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20story%20books.html" target="_blank">Story books</a>
+        <a hre="#">General subjects</a>
+        <a href="file:///D:/ECE_2100_Project_website/web%20project/library%20engineering%20sub.html" target="_blank">Engineering Study</a>
+    </div>
+    </div>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20gallary.html" target="_blank">Gallary</a>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20more.html" target="_blank">More</a>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/Library%20help.html" target="_blank">Help</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">submit</button>
+    </form>
+  </div>
+  </div>
+    <h2>General subjects</h2>
+<button class="accordion">Physics</button>
+<div class="panel">
+    <p><b><a href="A%20text%20of%20optics.html" target="_blank">A Text Book of Optics by Subrahmanyam and Brijlal</a></b></p>
+    <p><b><a href="Modernphysics%20by%20Krane.html" target="_blank">Modern Physics by Krane 3rd Edition</a></b></p>
+</div>
+
+<button class="accordion">Chemistry</button>
+<div class="panel">
+  <p><b><a href="Essential%20of%20physical%20chemistry.html" target="_blank">Essential of physical chemistry</a></b></p>
+  <p><b><a href="guidebookorganic%20chemistry.html" target="_blank">A Guidebook of Organic Reaction Mechanism by Peter Sykes</a></b></p>
+</div>
+
+<button class="accordion">Mathametics</button>
+<div class="panel">
+    <p><b><a href="Matrices%20by%20Chatterjee.html" target="_blank">Matrices by Chatterjee</a></b></p>
+    <p><b><a href="Vector%20Analysis%20Schaum's.html" target="_blank">Vector Analysis Schaum's Outlines</a></b></p>
+    <p><b><a href="Intro%20to%20ODE%20.html" target="_blank">Introduction to Ordinary Differential Equations by Shepley L. Ross </a></b></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</body>
+</html>

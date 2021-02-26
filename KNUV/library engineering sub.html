@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Engineering subjects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <style>
+.accordion {
+    background-color: rgba(195, 242, 228, 0.6);
+    color: #101010;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgba(175, 199, 196, 0.81);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+    </style>
+</head>
+<body>
+  <h1>KnoWLEDge UNIvers</h1>
+  <p>welcome to the world of books!</p>
+<div class="topnav">
+<a class="active" href="file:///F:/ECE_2100_Project_website/web%20project/Homepage.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Catagories
+            <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+       <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20story%20books.html" target="_blank">Story books</a>
+        <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20general%20subject.html" target="_blank">General subjects</a>
+        <a href="#">Engineering Study</a>
+    </div>
+    </div>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20gallary.html" target="_blank">Gallary</a>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20more.html" target="_blank">More</a>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/Library%20help.html" target="_blank">Help</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">submit</button>
+    </form>
+  </div>
+  </div>
+    <h2>Engineering subjects</h2>
+<button class="accordion">Electrical</button>
+<div class="panel">
+    <p><b><a href="Electrical%20Engineering%20Dic.html" target="_blank">Electrical Engineering Dictionary</a></b></p>
+    <p><b><a href="Fundamentals%20of%20electric%20Circuits.html" target="_blank">Fundamentals of Electrical Circuits 5th Edition</a></b></p>
+</div>
+
+<button class="accordion">Electronics</button>
+<div class="panel">
+    <p><b><a href="Electronic%20devices.html" target="_blank">Electronic Devices and Circuit Theory by Robert L. Boylestad</a></b></p>
+    <p><b><a href="Modern%20digital%20n%20analog%20communication.html" target="_blank">Modern Digital and Analog Communications Systems by B. P. Lathi </a></b></p>
+    <p><b><a href="Illustrated%20electronics%20dic.html" target="_blank">Illustrated Dictionary of Electronics</a></b></p>
+</div>
+
+<button class="accordion">Computer Engineering</button>
+<div class="panel">
+    <p><b><a href="The%20complete%20reference.html" target="_blank">H.Schildt.Cpp.The.Complete.Reference.4th.Edition.ENG</a></b></p>
+    <p><b><a href="Programming%20in%20ANCI%20C.html" target="_blank">Programming In ANSI C - Balagurusamy</a></b></p>
+    <p><b><a href="Java%20how%20to%20program.html" target="_blank">Java How to Program 9th Ed. Deitel</a></b></p>
+    <p><b><a href="Data%20n%20Computer%20communication.html" target="_blank">Data And Computer Communications 8th edition by WilliamStallings</a></b></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</body>
+</html>

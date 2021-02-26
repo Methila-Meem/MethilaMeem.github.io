@@ -1,0 +1,215 @@
+* {box-sizing: border-box;}
+.header {
+    padding: 45px;
+    text-align: center;
+    background-image: url(gallary/Library%20Location.jpg);
+    color: black;
+}
+body {
+    background-color: #f1f1f1;
+    padding: 15px;
+    font-family: Comic Sans MS;
+}
+
+/* Center website */
+.main {
+    max-width: 1500px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-image: url("gallary/librarybackgrnd.jpg");
+  background-size: cover;
+}
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #676161;
+}
+
+.active {
+    background-color: deepskyblue;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #070a58;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #676161;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.dropdown{
+        float: left;
+        overflow: hidden;
+    }
+.dropdown .dropbtn{
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #676161;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        
+    }
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: deepskyblue;
+  color: black;
+}
+.topnav a.active {
+  background-color: deepskyblue;
+  color: white;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: deepskyblue;
+    min-width: 120px;
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #070a58;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:#11b8d6;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Column container*/
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: rgba(141, 219, 245, 0.5);
+    padding: 25px;
+}
+
+/* Main column */
+.main {   
+    flex: 70%;
+    background-color: rgba(195, 242, 228, 0.6);
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width:100%;
+    }
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

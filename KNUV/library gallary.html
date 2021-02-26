@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+        <style>
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 20px -32px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 14px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 22.22%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: rgba(192, 204, 202, 0.53);
+    padding: 8px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+            /* Style the buttons */
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.Show all {color: black;}
+.nature {color: black;}
+.car {color: black;}
+.people {color: black;}
+.default {color: black;}
+</style>
+</head>
+<body>
+  <h1>KnoWLEDge UNIvers</h1>
+  <p>welcome to the world of books!</p>
+<div class="topnav">
+<a class="active" href="file:///F:/ECE_2100_Project_website/web%20project/Homepage.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Catagories
+            <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+       <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20story%20books.html" target="_blank">Story books</a>
+        <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20general%20subject.html" target="_blank">General subjects</a>
+        <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20engineering%20sub.html">Engineering Study</a>
+    </div>
+    </div>
+  <a href="#gallary">Gallary</a>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/library%20more.html" target="_blank">More</a>
+  <a href="file:///F:/ECE_2100_Project_website/web%20project/Library%20help.html" target="_blank">Help</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">submit</button>
+    </form>
+  </div>
+</div>
+<div class="main">
+      <h2>WELcome to the Gallary!!</h2>
+    <h2>PORTFOLIO</h2>
+
+<div id="myBtnContainer">
+  <button class="btn show all" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn nature" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn car" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn people" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="gallary/Mount1.jpg" alt="Mount everest" style="width:100%">
+      <h4>Mount Everest</h4>
+      <p>Mount Everest, known in Nepali as Sagarmāthā and in Tibetan as Chomolungma, is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The international border between China (Tibet Autonomous Region) and Nepal runs across its summit point.The current official elevation of 8,848 m (29,029 ft), recognised by China and Nepal, was established by a 1955 Indian survey and subsequently confirmed by a Chinese survey in 1975</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="gallary/maxresdefault.jpg" alt="Aurora" style="width:100%">
+      <h4>Aurora</h4>
+      <p>An aurora (plural: auroras),[a] sometimes referred to as polar lights, northern lights (aurora borealis) or southern lights (aurora australis), is a natural light display in the Earth's sky, predominantly seen in the high-latitude regions (around the Arctic and Antarctic).Auroras are produced when the magnetosphere is sufficiently disturbed by the solar wind that the trajectories of charged particles in both solar wind and magnetospheric plasma, mainly in the form of electrons and protons, precipitate them into the upper atmosphere (thermosphere/exosphere) due to Earth's magnetic field, where their energy is lost.</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="gallary/mangrove.jpg" alt="Mangrove" style="width:100%">
+      <h4>Mangrove</h4>
+      <p>A mangrove is a shrub or small tree that grows in coastal saline or brackish water. The term is also used for tropical coastal vegetation consisting of such species. Mangroves occur worldwide in the tropics and subtropics, mainly between latitudes 25° N and 25° S. The total mangrove forest area of the world in 2000 was 137,800 square kilometres (53,200 sq mi), spanning 118 countries and territories.Mangroves are salt-tolerant trees, also called halophytes, and are adapted to life in harsh coastal conditions. They contain a complex salt filtration system and complex root system to cope with salt water immersion and wave action. They are adapted to the low oxygen (anoxic) conditions of waterlogged mud.</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="gallary/first%20car.jpg" alt="first automobile car" style="width:100%">
+      <h4>First car in the world</h4>
+      <p>The first stationary gasoline engine developed by Carl Benz was a one-cylinder two-stroke unit which ran for the first time on New Year’s Eve 1879. Benz had so much commercial success with this engine that he was able to devote more time to his dream of creating a lightweight car powered by a gasoline engine, in which the chassis and engine formed a single unit.
+      The major features of the two-seater vehicle, which was completed in 1885, were the compact high-speed single-cylinder four-stroke engine installed horizontally at the rear, the tubular steel frame, the differential and three wire-spoked wheels. The engine output was 0.75 hp (0.55 kW). Details included an automatic intake slide, a controlled exhaust valve, high-voltage electrical vibrator ignition with spark plug, and water/thermo siphon evaporation cooling.</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="gallary/1909%20lambert.jpg" alt="lambert" style="width:100%">
+      <h4>The Lambert from 1909</h4>
+      <p>The Lambert automobile and Lambert truck were built by the Lambert Automobile Company as an American vehicle from 1905 through 1916. The Lambert automobile motor in the early part of manufacturing moved around on the chassis. It was on the back of the chassis, then in the center, then to the front, and back again to the rear of the automobile. The early motors were built at the Lambert factories of the Buckeye Manufacturing Company and later they were outsourced to other proprietary manufactures.</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="gallary/the-smallest-car.jpg" alt="smallest car" style="width:100%">
+      <h4>The Peel P50</h4>
+      <p>The Peel P50 is a three-wheeled microcar originally manufactured from 1962 to 1965 by the Peel Engineering Company on the Isle of Man. It was listed in the 2010 Guinness World Records as the smallest production car ever made.It had no reverse gear, but a handle at the rear allows the very lightweight car to be manoeuvred physically when required. Designed as a city car, it was advertised in the 1960s as capable of seating "one adult and a shopping bag". The vehicle's only door was on its left side and equipment included a single windscreen wiper and one headlight. Standard colours were Daytona White, Dragon Red, and Dark Blue. The 1963 model retailed for £199 when new (about £1,400 in 2010, or US$2,200). The company produced 50 P50s and only 27 are known to still exist, one of which was sold for a record US$176,000 at a Sotheby's auction in March 2016.</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="gallary/Albert_Einstein.jpg" alt="Einstein" style="width:100%">
+      <h4>Albert Einstein</h4>
+      <p>Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). His work is also known for its influence on the philosophy of science.He is best known to the general public for his mass–energy equivalence formula E = mc2, which has been dubbed "the world's most famous equation". He received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect", a pivotal step in the development of quantum theory.</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="gallary/mother-teresa.jpg" alt="Mother teresa" style="width:100%">
+      <h4>Mother Teresa</h4>
+      <p>Mother Teresa, known in the Roman Catholic Church as Saint Teresa of Calcutta(born Anjezë Gonxhe Bojaxhiu, Albanian: [aˈɲɛzə ˈɡɔndʒɛ bɔjaˈdʒiu]; 26 August 1910 – 5 September 1997), was an Albanian-Indian[4] Roman Catholic nun and missionary.She was born in Skopje (now the capital of Macedonia), then part of the Kosovo Vilayet of the Ottoman Empire. After living in Macedonia for eighteen years she moved to Ireland and then to India, where she lived for most of her life.
+      In 1950 Teresa founded the Missionaries of Charity, a Roman Catholic religious congregation which had over 4,500 sisters and was active in 133 countries in 2012. The congregation manages homes for people dying of HIV/AIDS, leprosy and tuberculosis; soup kitchens; dispensaries and mobile clinics; children's- and family-counselling programmes; orphanages, and schools. Members, who take vows of chastity, poverty, and obedience, also profess a fourth vow: to give "wholehearted free service to the poorest of the poor".</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="gallary/edison.jpg" alt="edison" style="width:100%">
+      <h4>Thomas Alva Edison</h4>
+      <p>Thomas Alva Edison (February 11, 1847 – October 18, 1931) was an American inventor and businessman, who has been described as America's greatest inventor. He developed many devices that greatly influenced life around the world, including the phonograph, the motion picture camera, and the long-lasting, practical electric light bulb. Dubbed "The Wizard of Menlo Park", he was one of the first inventors to apply the principles of mass production and large-scale teamwork to the process of invention, and is often credited with the creation of the first industrial research laboratory. Edison was a prolific inventor, holding 1,093 US patents in his name, as well as many patents in the United Kingdom, France, and Germany.Edison's inventions: electric light and power utilities, sound recording, and motion pictures all established major new industries worldwide. Edison's inventions contributed to mass communication and, in particular, telecommunications. These included a stock ticker, a mechanical vote recorder, a battery for an electric car, electrical power, recorded music and motion pictures.Edison developed a system of electric-power generation and distribution to homes, businesses, and factories – a crucial development in the modern industrialized world. His first power station was on Pearl Street in Manhattan, New York.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
